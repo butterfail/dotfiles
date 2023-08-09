@@ -23,6 +23,11 @@ set -g FZF_PREVIEW_FILE_CMD "bat --style=numbers --color=always --line-range :50
 set -g FZF_LEGACY_KEYBINDINGS 0
 
 # NVM
+set -x NVM_DIR "/Users/gregoireciles/.nvm"
+if not string match -q -- $NVM_DIR $PATH
+  set -x PATH "$NVM_DIR" $PATH
+end
+
 function __check_rvm --on-variable PWD --description 'Do nvm stuff'
   status --is-command-substitution; and return
 
