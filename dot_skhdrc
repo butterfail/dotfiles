@@ -34,3 +34,10 @@ meh - h : yabai -m window --focus west || yabai -m window --focus stack.prev || 
 meh - j : yabai -m window --focus south
 meh - k : yabai -m window --focus north
 meh - l : yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+
+meh - s : yabai -m space --focus 1; # desktop 1 - misc
+meh - r : yabai -m space --focus 2; # desktop 2 - vscode
+meh - w : yabai -m space --focus 3; # desktop 3 - web
+
+meh - d : yabai -m window --focus $(yabai -m query --windows |jq '.[] | select (.app  == "Discord") | .id');
+meh - m : yabai -m window --focus $(yabai -m query --windows |jq '.[] | select (.app  == "Spotify") | .id');
