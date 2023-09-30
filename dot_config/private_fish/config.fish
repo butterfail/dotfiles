@@ -36,7 +36,3 @@ function __check_rvm --on-variable PWD --description 'Do nvm stuff'
   else
   end
 end
-
-if status is-interactive
-	cd $HOME/Projects/
-end
