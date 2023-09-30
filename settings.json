@@ -1,0 +1,133 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 20,
+  "editor.fontFamily": "\"MonoLisa\"",
+  "editor.fontWeight": "bold",
+  "editor.fontLigatures": false,
+  "editor.glyphMargin": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  // -- Sidebar
+  "workbench.tree.indent": 15,
+  "workbench.tree.renderIndentGuides": "always",
+  // -- Code
+  "editor.occurrencesHighlight": false,
+  "editor.renderWhitespace": "trailing",
+  // -- Remove Tabs
+  "editor.tabSize": 2,
+  "workbench.editor.tabSizing": "fit",
+  "editor.detectIndentation": false,
+  "workbench.iconTheme": "file-icons",
+  // -- Terminal
+  "terminal.integrated.fontFamily": "\"MonoLisa\"",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "bold",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  
+  // Ergonomic
+  "editor.wordWrap": "on",
+  "editor.suggest.insertMode": "replace",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.linkedEditing": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "explorer.autoReveal": true,
+  "explorer.confirmDragAndDrop": false,
+  "emmet.triggerExpansionOnTab": true,
+  "workbench.settings.editor": "json",
+
+  // Files
+  "files.autoSave": "onFocusChange",
+  "files.associations": {
+    "*.blade.php": "blade",
+    "*.mdx": "markdown",
+  },
+  "files.exclude": {
+    "**/.idea": true
+  },
+
+  // Languages
+  "javascript.preferences.importModuleSpecifierEnding": "minimal",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  "emmet.includeLanguages": {
+    "vue": "html",
+    "vue-html": "html",
+    "react": "html",
+    "edge": "html",
+    "twig": "html"
+  },
+
+  // Formatters
+  "prettier.requireConfig": true,
+  "prettier.documentSelectors": ["**/*.blade.php"],
+  "blade.format.enable": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.untrackedChanges": "separate",
+
+  // Extensions
+  "extensions.ignoreRecommendations": true,
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "error"
+  ],
+  "errorLens.excludeBySource": [
+    "cSpell",
+    "Grammarly",
+    "eslint",
+  ],
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "cSpell.userWords": [
+    "actix",
+    "bindgen",
+    "contentlayer",
+    "pino",
+    "reqwest",
+    "tailwindcss"
+  ],
+  "git.openRepositoryInParentFolders": "never",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ]
+}
