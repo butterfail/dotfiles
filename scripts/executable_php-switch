@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# This script allows switching between different PHP versions on macOS using Homebrew.
+# Version 1.0.0
+# Copyright (c) Grégoire Ciles
+# Usage: ./switch-php.sh <version_number> (e.g., ./switch-php.sh 8.1)
+
+function error() {
+  echo "Error: $1"
+  exit 1
+}
+
+# Check if an argument is provided
+if [ $# -ne 1 ]; then
+  error "Please provide a PHP version to switch to (e.g., 7.4, 8.0, 8.1)"
+fi
+
+# Check if the PHP version is installed
+function is_php_installed() {
+  brew list php@$1 &>/dev/null
+}
+
+# PHP version to switch to
+PHP_VERSION=$1
+
+# Function to check if a specific PHP version is installed
+# If the version is not installed, it proceeds to install it using Homebrew.
+if ! is_php_installed $PHP_VERSION; then
+  echo "PHP $PHP_VERSION is not installed. Installing..."
+  brew install php@$PHP_VERSION || error "Failed to install PHP $PHP_VERSION."
+fi
+
+# Unlink the current PHP version
+brew unlink php || error "Unable to unlink the current PHP version."
+
+# Link the new PHP version
+brew link php@$PHP_VERSION --force --overwrite || error "Unable to link PHP $PHP_VERSION."
+
+echo "Successfully switched to PHP $PHP_VERSION."
