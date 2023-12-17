@@ -4,14 +4,22 @@ return {
   config = function()
     -- Some servers have issues with backup files, see #649S
     vim.g.coc_global_extensions = {
-      "coc-pairs",
-      "coc-elixir",
-      "coc-tsserver",
-      "coc-json",
+      "coc-blade",
+      "coc-copilot",
+      "coc-css",
       "coc-docker",
-      "coc-svelte",
-      "coc-rust-analyzer",
+      "coc-elixir",
       "coc-eslint",
+      "coc-html",
+      "coc-java",
+      "coc-json",
+      "coc-pairs",
+      "coc-rust-analyzer",
+      "coc-svelte",
+      "coc-tailwindcss",
+      "coc-tsserver",
+      "@yaegassy/coc-intelephense",
+      "@yaegassy/coc-laravel",
     }
     vim.opt.backup = false
     vim.opt.writebackup = false
