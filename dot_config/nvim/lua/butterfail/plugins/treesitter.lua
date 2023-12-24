@@ -13,9 +13,12 @@ return {
         "c",
         "css",
         "dockerfile",
-        "graphql",
+        "elixir",
+        "elm",
         "go",
+        "graphql",
         "html",
+        "java",
         "javascript",
         "jsdoc",
         "json",
@@ -31,8 +34,8 @@ return {
         "svelte",
         "toml",
         "tsx",
-        "yaml",
         "typescript",
+        "yaml",
       },
       -- context_commentstring = {
       --   enable = true
