@@ -15,7 +15,14 @@ function M.setup()
   end
   vim.opt.rtp:prepend(lazypath)
 
-  require("lazy").setup("butterfail.plugins")
+  require("lazy").setup({ { import = "butterfail.plugins" } }, {
+    checker = { enabled = true },
+    performance = {
+      cache = { enabled = true },
+    },
+    debug = false,
+  })
+
   require("butterfail.core")
 end
 
