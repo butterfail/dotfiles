@@ -3,6 +3,9 @@ local keymap = vim.keymap
 -- LEADER KEY FIRST
 vim.g.mapleader = " "
 
+-- Select all
+keymap.set("n", "<C-a>", "gg<S-v>G")
+
 -- Remove macro key since I don't use it
 keymap.set("n", "q", "<nop>", { silent = true })
 
